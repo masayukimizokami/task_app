@@ -1,0 +1,14 @@
+<h1>
+  現在の日時：<span id="date"></span>
+  <span>スケジュール合計：<%= @schedules.count %></span>
+</h1>
+
+<script>
+  var today = new Date();
+
+  var year = today.getFullYear();
+  var month = today.getMonth() + 1;
+  var date = today.getDate();
+
+  document.getElementById("date").innerHTML = year + "年" + month + "月" + date + "日";
+</script>
